@@ -116,11 +116,14 @@ This platform **automatically solves that problem** by:
 ```
 AI-Based-Knowledge-Graph-Builder/
 │
-├── 📓 data_ingestion.ipynb          # Milestone 1: Data cleaning & preprocessing
-├── 📓 llm.ipynb                     # Milestone 2: LLM entity extraction & graph
+├── 📓 data_ingestion.ipynb          # Milestone 1: Data cleaning & enrichment
+├── 📓 llm.ipynb                     # Milestone 2: LLM NER & Neo4j graph
 │
-├── 📊 tickets.xlsx                  # Raw enterprise ticket data (8,469 records)
+├── 📊 tickets.xlsx                  # Raw enterprise data (8,469 records)
 ├── 📊 cleaned_tickets.xlsx          # Processed dataset (21 columns)
+├── 📊 structured_triples.csv        # Rule-based triples from ticket columns
+├── 📊 llm_triples.csv               # Semantic triples from Mistral LLM
+├── 📊 final_triples.csv             # Merged complete knowledge graph dataset
 │
 ├── 📁 semantic_rag/                 # Milestone 3: RAG Pipeline
 │   ├── 🐍 documents.py             # Knowledge base documents
@@ -129,8 +132,8 @@ AI-Based-Knowledge-Graph-Builder/
 │   ├── 🐍 rag_pipeline.py          # Complete RAG Q&A pipeline
 │   └── 🐍 main.py                  # Pipeline entry point
 │
-└── 📁 app/                          # Milestone 4: Web Dashboard
-    └── 🐍 app.py                   # Streamlit web application
+└── 📁 app/                          # Milestone 4: Dashboard & API
+    └── 🐍 app.py                   # Streamlit dashboard + Flask API
 ```
 
 <br/>
