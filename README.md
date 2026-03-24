@@ -222,9 +222,6 @@ Note: Running LLM on full 8,469 tickets generates
 a significantly larger, interconnected knowledge graph.
 ```
 
-## Step 5: Graph Validation
-
-Validated graph integrity using Cypher queries in Neo4j Browser:
 ---
 
 ### ✅ Milestone 3 — Semantic Search & RAG Pipeline
